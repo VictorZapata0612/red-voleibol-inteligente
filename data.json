@@ -1,0 +1,14 @@
+[
+    {
+        "sensor": "MPU6050-1",
+        "impacto": "Moderado",
+        "vibracion": "Alta",
+        "fecha": "2025-02-07 14:32"
+    },
+    {
+        "sensor": "MPU6050-2",
+        "impacto": "Fuerte",
+        "vibracion": "Baja",
+        "fecha": "2025-02-07 14:35"
+    }
+]
