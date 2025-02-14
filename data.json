@@ -1,14 +1,6 @@
 [
-    {
-        "sensor": "MPU6050-1",
-        "impacto": "Moderado",
-        "vibracion": "Alta",
-        "fecha": "2025-02-07 14:32"
-    },
-    {
-        "sensor": "MPU6050-2",
-        "impacto": "Fuerte",
-        "vibracion": "Baja",
-        "fecha": "2025-02-07 14:35"
-    }
+    {"sensor": "Sensor 1", "valor": 8.5, "unidad": "G"},
+    {"sensor": "Sensor 2", "valor": 3.2, "unidad": "G"},
+    {"sensor": "Sensor 3", "valor": 1.0, "unidad": "G"},
+    {"sensor": "Sensor 4", "valor": 5.7, "unidad": "G"}
 ]

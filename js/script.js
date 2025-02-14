@@ -1,24 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            const container = document.getElementById('data-container');
-            container.innerHTML = '';
+document.addEventListener("DOMContentLoaded", function() {
+    // Animación de las secciones al hacer scroll
+    const cards = document.querySelectorAll('.info-card');
 
-            data.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'data-card';
-                card.innerHTML = `
-                    <h3>🎯 Sensor: ${item.sensor}</h3>
-                    <p><strong>Impacto:</strong> ${item.impacto}</p>
-                    <p><strong>Vibración:</strong> ${item.vibracion}</p>
-                    <p><strong>Fecha:</strong> ${item.fecha}</p>
-                `;
-                container.appendChild(card);
-            });
-        })
-        .catch(error => {
-            console.error('Error al cargar los datos:', error);
-            document.getElementById('data-container').innerHTML = 'No se pudieron cargar los datos.';
+    function revealCards() {
+        cards.forEach(card => {
+            const position = card.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (position < windowHeight - 50) {
+                card.classList.add("show");
+            }
         });
+    }
+
+    window.addEventListener("scroll", revealCards);
+    revealCards(); // Ejecutar en carga inicial
+
+    // Datos simulados en consola (para pruebas)
+    console.log("Simulación de datos en tiempo real:");
+    console.log({
+        velocidadImpacto: "7.8 m/s",
+        fuerzaGolpe: "12.4 N",
+        tiempoContacto: "0.35 s"
+    });
 });

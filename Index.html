@@ -3,63 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red de Voleibol Inteligente IoT</title>
+    <title>Red de Voleibol Inteligente</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <header>
-        <h1>🏐 Red de Voleibol Inteligente IoT</h1>
+        <h1 class="fade-in">Red de Voleibol Inteligente</h1>
         <nav>
-            <a href="#proyecto">Proyecto</a>
-            <a href="#funciones">Funciones</a>
-            <a href="#datos">Datos en Tiempo Real</a>
-            <a href="#diagramas">Diagramas</a>
+            <ul>
+                <li><a href="index.html">🏠 Página Principal</a></li>
+                <li><a href="circuito.html">⚡ Circuito</a></li>
+                <li><a href="datos.html">📊 Datos en Tiempo Real</a></li>
+            </ul>
         </nav>
     </header>
-
+    
     <main>
-        <div class="grid-container">
-            <section id="proyecto" class="grid-item">
-                <h2>📋 Descripción del Proyecto</h2>
-                <p>La Red de Voleibol Inteligente IoT recopila datos en tiempo real usando sensores MPU6050 y un ESP32, enviándolos a la nube para análisis del rendimiento en el juego.</p>
-            </section>
-    
-            <section id="funciones" class="grid-item">
-                <h2>⚡ Funciones Clave</h2>
-                <ul>
-                    <li>Detección de impacto y vibración.</li>
-                    <li>Monitoreo de la tensión de la red.</li>
-                    <li>Transmisión de datos en tiempo real a la nube.</li>
-                </ul>
-            </section>
-    
-            <section id="datos" class="grid-item">
-                <h2>📊 Datos en Tiempo Real</h2>
-                <div id="data-container">Cargando datos...</div>
-            </section>
-        </div>
+        <section id="banner">
+            <img src="img/banner.jpg.webp" alt="Red de Voleibol Inteligente" class="fade-in">
+        </section>
+        
+        <section class="info-card slide-up">
+            <h2>🏆 Misión y Visión</h2>
+            <p><strong>Misión:</strong> Optimizar el rendimiento del equipo Cali Wolfpack con tecnología avanzada.</p>
+            <p><strong>Visión:</strong> Ser la red de monitoreo más precisa en voleibol competitivo.</p>
+        </section>
+        
+        <section class="info-card slide-up">
+            <h2>🤔 ¿Para qué sirve?</h2>
+            <p>Este sistema permite analizar impactos y vibraciones en la red para mejorar entrenamientos y tácticas.</p>
+            <img src="img/volleyball_net.jpg.webp" alt="Red de voleibol en acción" class="zoom-effect">
+        </section>
+        
+        <section class="info-card slide-up">
+            <h2>🎯 Objetivos</h2>
+            <ul>
+                <li>📡 Monitoreo en tiempo real</li>
+                <li>📈 Optimización del rendimiento</li>
+                <li>👨‍🏫 Soporte para entrenadores y jugadores</li>
+            </ul>
+            <img src="img/analysis.jpg.webp" alt="Análisis de datos de voleibol" class="zoom-effect">
+        </section>
 
-        <section id="diagramas">
-            <h2>📈 Diagramas del Proyecto</h2>
-            <div class="diagram-container">
-                <h3>🔌 Circuito Esquemático</h3>
-                <img src="img/circuito_esquematico.png" alt="Circuito Esquemático" class="zoom-img">
-            </div>
-            <div class="diagram-container">
-                <h3>📊 Diagrama de Bloques</h3>
-                <img src="img/diagrama_bloques.png" alt="Diagrama de Bloques" class="zoom-img">
-            </div>
-            <div class="diagram-container">
-                <h3>🔄 Diagrama de Flujo</h3>
-                <img src="img/diagrama_flujo.png" alt="Diagrama de Flujo" class="zoom-img">
-            </div>
+        <section class="info-card slide-up">
+            <h2>👥 ¿Quién lo usará?</h2>
+            <p>Este sistema está diseñado para entrenadores, jugadores y analistas deportivos que deseen mejorar la precisión y la toma de decisiones estratégicas en el voleibol.</p>
+            <img src="img/users.webp" alt="Entrenadores y jugadores usando tecnología" class="zoom-effect">
         </section>
     </main>
-
+    
     <footer>
-        <p>&copy; 2025 Red de Voleibol Inteligente IoT</p>
+        <p>&copy; 2025 Red de Voleibol Inteligente | Contacto: info@voleibolinteligente.com</p>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
